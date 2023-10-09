@@ -46,7 +46,6 @@ MonoBehaviour:
   _hand: {fileID: 5346183831593185114}
   _pokeInteractor: {fileID: 482801000701448007}
   _syntheticHand: {fileID: 0}
-  _maxDistanceFromTouchPoint: 0.1
 --- !u!1 &5419937293532398298
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,6 +110,7 @@ MonoBehaviour:
   _interactableFilters: []
   _pointTransform: {fileID: 5419937294994736466}
   _touchReleaseThreshold: 0.002
+  _zThreshold: 0.001
   _dragStartCurve:
     _animationCurve:
       serializedVersion: 2

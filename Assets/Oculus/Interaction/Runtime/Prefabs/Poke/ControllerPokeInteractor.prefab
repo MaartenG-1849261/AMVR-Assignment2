@@ -63,6 +63,7 @@ MonoBehaviour:
   _interactableFilters: []
   _pointTransform: {fileID: 7784094158884016172}
   _touchReleaseThreshold: 0.002
+  _zThreshold: 0.001
   _dragStartCurve:
     _animationCurve:
       serializedVersion: 2
