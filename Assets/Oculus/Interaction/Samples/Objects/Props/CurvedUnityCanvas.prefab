@@ -2428,6 +2428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317e663e2bb60ea408fe22b908b59295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interactorFilters: []
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _pointableElement: {fileID: 8852292918159927502}
@@ -2439,6 +2440,9 @@ MonoBehaviour:
   _horizontalDragThreshold: 0.01
   _verticalDragThreshold: 0.01
   _volumeMask: {fileID: 0}
+  _positionPinning:
+    Enabled: 0
+    MaxPinDistance: 0
 --- !u!114 &7114770129336771052
 MonoBehaviour:
   m_ObjectHideFlags: 0
