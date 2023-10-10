@@ -11,6 +11,8 @@ public class PlayerFollower : MonoBehaviour
     [SerializeField]
     private Transform player;
     private bool active = false;
+    [SerializeField]
+    private GameObject shootingRange;
 
     void Start()
     {
@@ -19,7 +21,7 @@ public class PlayerFollower : MonoBehaviour
 
     private void Update()
     {
-        if (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger))
+        if (OVRInput.GetDown(OVRInput.Button.One))
         { 
             if (active == false)
             {
@@ -46,5 +48,10 @@ public class PlayerFollower : MonoBehaviour
     {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
+    }
+
+    public void OnStartShootingRangeSelect()
+    {
+        shootingRange.SetActive(true);
     }
 }

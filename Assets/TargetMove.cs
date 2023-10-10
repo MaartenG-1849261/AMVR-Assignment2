@@ -6,8 +6,9 @@ public class TargetMove : MonoBehaviour
 {
     public float moveSpeed = 2.0f; // Speed at which the target moves
     private int moveDirection; // 1 for right, -1 for left
-    private float lifeTimer = 100;
+    private float lifeTimer = 5;
     private bool isOriginalTarget = true;
+    private bool isHit = false;
 
     private void Start()
     {
@@ -20,7 +21,7 @@ public class TargetMove : MonoBehaviour
 
         // Move the target horizontally
         transform.Translate(Vector3.right * moveSpeed * moveDirection * Time.deltaTime);
-        if (transform.position.x >= 4.8 || transform.position.x <= -4.8)
+        if (transform.position.x > 5 || transform.position.x < -5)
         {
             moveDirection *= -1;
         }
@@ -37,7 +38,7 @@ public class TargetMove : MonoBehaviour
 
     void OnCollisionEnter(Collision collision) 
     {
-        Debug.Log("qqqqqqqqq");
+        isHit = true;
         gameObject.SetActive(false);
     }
 
@@ -49,6 +50,11 @@ public class TargetMove : MonoBehaviour
     public void SetAsNonOriginalTarget()
     {
         isOriginalTarget = false;
+    }
+
+    public bool GetIsHit()
+    {
+        return isHit;
     }
     /*
     private void OnCollisionEnter(Collision collision)
