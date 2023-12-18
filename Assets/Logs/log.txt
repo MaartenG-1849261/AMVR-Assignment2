@@ -1,0 +1,13 @@
+
+12/18/2023 11:49:11 AM - Time: 37200
+12/18/2023 11:49:11 AM - Aantal juiste preselecties: 20
+12/18/2023 11:49:11 AM - Aantal foute preselecties: 1
+12/18/2023 11:49:11 AM - Aantal juiste selecties: 20
+12/18/2023 11:49:11 AM - Aantal foute selecties: 0
+12/18/2023 11:49:11 AM - Aantal gemiste selecties: 7
+12/18/2023 1:04:13 PM - Time: 0
+12/18/2023 1:04:13 PM - Aantal juiste preselecties: 21
+12/18/2023 1:04:13 PM - Aantal foute preselecties: 2
+12/18/2023 1:04:13 PM - Aantal juiste selecties: 20
+12/18/2023 1:04:13 PM - Aantal foute selecties: 1
+12/18/2023 1:04:13 PM - Aantal gemiste selecties: 8
