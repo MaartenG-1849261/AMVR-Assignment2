@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 65030888}
   - component: {fileID: 65030887}
   - component: {fileID: 65030893}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: secondCubePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4115,9 +4115,12 @@ MonoBehaviour:
   rightHanded: 1
   numberOfCubes: 100
   minSize: 0.5
-  maxSize: 3
-  minVeloc: -1
-  maxVeloc: 1
+  maxSize: 2
+  minVeloc: -10
+  maxVeloc: 10
+  layermask:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!65 &1600284066
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4205,7 +4208,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c3c334f6f057d234ca7ae1611cc62d8e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

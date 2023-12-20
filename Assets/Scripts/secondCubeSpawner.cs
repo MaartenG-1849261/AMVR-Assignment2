@@ -36,6 +36,8 @@ public class secondCubeSpawner : MonoBehaviour
     public float maxSize;
     public float minVeloc;
     public float maxVeloc;
+    public LayerMask layermask;
+
     private Vector3 boundingBoxSize;
     private Vector3 boundingBoxPos;
     private GameObject targetCopy;
@@ -108,7 +110,7 @@ public class secondCubeSpawner : MonoBehaviour
         LineRenderer LineDrawer = GetComponent<LineRenderer>();
         //UnityEngine.Debug.DrawRay(ray.origin, ray.direction * 10f, Color.green);
         
-        if (Physics.Raycast(ray, out raycastHit, 100f))
+        if (Physics.Raycast(ray, out raycastHit, 100f, layermask, QueryTriggerInteraction.Collide))
         {
             if (raycastHit.transform != null)
             {
@@ -126,11 +128,17 @@ public class secondCubeSpawner : MonoBehaviour
                     selectedCube = raycastHit.transform.gameObject;
                     selectedCube.gameObject.GetComponent<ChangeAndShowDirection>().showDirection();
                 }
+                else if (selectedCube == raycastHit.transform.gameObject)
+                {
+                    selectedCube.GetComponent<ChangeAndShowDirection>().hideDirection();
+                    selectedCube.gameObject.GetComponent<ChangeAndShowDirection>().showDirection();
+                }
             }
         }
         else
         {
             UnityEngine.Debug.Log("niks");
+            selectedCube.GetComponent<ChangeAndShowDirection>().hideDirection();
         }
         
         if ((OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) && rightHanded) || (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger) && !rightHanded))
@@ -162,8 +170,6 @@ public class secondCubeSpawner : MonoBehaviour
                         {
                             timer.Stop();
                             LogToFile("Time: " + timer.ElapsedMilliseconds);
-                            LogToFile("Aantal juiste preselecties: " + aantalJuistePreselectie);
-                            LogToFile("Aantal foute preselecties: " + aantalFoutePreselectie);
                             LogToFile("Aantal juiste selecties: " + aantalJuisteSelecties);
                             LogToFile("Aantal foute selecties: " + aantalFouteSelecties);
                             LogToFile("Aantal gemiste selecties: " + aantalGemisteSelecties);

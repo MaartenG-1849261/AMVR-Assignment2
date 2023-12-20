@@ -1,12 +1,8 @@
-12/18/2023 2:43:29 PM - Time: 0
-12/18/2023 2:43:29 PM - Aantal juiste preselecties: 0
-12/18/2023 2:43:29 PM - Aantal foute preselecties: 0
-12/18/2023 2:43:29 PM - Aantal juiste selecties: 20
-12/18/2023 2:43:29 PM - Aantal foute selecties: 4
-12/18/2023 2:43:29 PM - Aantal gemiste selecties: 12
-12/18/2023 2:45:16 PM - Time: 0
-12/18/2023 2:45:16 PM - Aantal juiste preselecties: 0
-12/18/2023 2:45:16 PM - Aantal foute preselecties: 0
-12/18/2023 2:45:16 PM - Aantal juiste selecties: 20
-12/18/2023 2:45:16 PM - Aantal foute selecties: 0
-12/18/2023 2:45:16 PM - Aantal gemiste selecties: 5
+12/20/2023 12:47:53 PM - Time: 66978
+12/20/2023 12:47:53 PM - Aantal juiste selecties: 20
+12/20/2023 12:47:53 PM - Aantal foute selecties: 14
+12/20/2023 12:47:53 PM - Aantal gemiste selecties: 54
+12/20/2023 1:20:54 PM - Time: 63817
+12/20/2023 1:20:54 PM - Aantal juiste selecties: 20
+12/20/2023 1:20:54 PM - Aantal foute selecties: 4
+12/20/2023 1:20:54 PM - Aantal gemiste selecties: 29
