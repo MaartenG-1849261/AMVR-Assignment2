@@ -6,3 +6,11 @@
 12/20/2023 1:20:54 PM - Aantal juiste selecties: 20
 12/20/2023 1:20:54 PM - Aantal foute selecties: 4
 12/20/2023 1:20:54 PM - Aantal gemiste selecties: 29
+12/21/2023 3:42:13 PM - Time: 266508
+12/21/2023 3:42:13 PM - Aantal juiste selecties: 20
+12/21/2023 3:42:13 PM - Aantal foute selecties: 34
+12/21/2023 3:42:13 PM - Aantal gemiste selecties: 216
+12/21/2023 3:49:10 PM - Time: 61911
+12/21/2023 3:49:10 PM - Aantal juiste selecties: 20
+12/21/2023 3:49:10 PM - Aantal foute selecties: 22
+12/21/2023 3:49:10 PM - Aantal gemiste selecties: 118
